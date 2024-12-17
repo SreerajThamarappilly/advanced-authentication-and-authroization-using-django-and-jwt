@@ -40,7 +40,7 @@ advanced-authentication-and-authroization-using-django-and-jwt/
 ├─ .env
 ├─ requirements.txt
 ├─ manage.py
-└─ advanced-authentication-and-authroization-using-django-and-jwt/
+└─ myproject/
    ├─ __init__.py
    ├─ asgi.py
    ├─ settings.py
