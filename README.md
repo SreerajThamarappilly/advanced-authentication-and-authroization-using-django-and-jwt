@@ -35,31 +35,31 @@ This project demonstrates an enterprise-grade authentication and authorization m
 ## Directory Structure
 
 ```bash
-advanced-authentication-and-authroization-using-django-and-jwt/
-├─ README.md
-├─ .env
-├─ requirements.txt
-├─ manage.py
-└─ myproject/
-   ├─ __init__.py
-   ├─ asgi.py
-   ├─ settings.py
-   ├─ urls.py
-   ├─ wsgi.py
-   └─ users/
-      ├─ __init__.py
-      ├─ admin.py
-      ├─ apps.py
-      ├─ migrations/
-      │  └─ __init__.py
-      ├─ models.py
-      ├─ serializers.py
-      ├─ services.py
-      ├─ repositories.py
-      ├─ permissions.py
-      ├─ tests.py
-      ├─ urls.py
-      └─ views.py
+advanced-authentication-and-authorization-using-django-and-jwt/
+├─ README.md                          # Project documentation and instructions.
+├─ .env                               # Environment variables for sensitive data and configuration.
+├─ requirements.txt                   # List of Python dependencies required for the project.
+├─ manage.py                          # Entry point to run Django commands (e.g., runserver, migrate).
+└─ myproject/                         # Main Django project directory.
+   ├─ __init__.py                     # Marks the directory as a Python package.
+   ├─ asgi.py                         # ASGI configuration for asynchronous server deployments.
+   ├─ settings.py                     # Main settings and configurations for the Django project.
+   ├─ urls.py                         # Root URL routing configuration for the project.
+   ├─ wsgi.py                         # WSGI configuration for deploying the project to production servers.
+   └─ users/                          # Custom Django app for authentication and user management.
+      ├─ __init__.py                  # Marks the directory as a Python package.
+      ├─ admin.py                     # Registers the User model for the Django admin interface.
+      ├─ apps.py                      # App configuration for the "users" app.
+      ├─ migrations/                  # Database migration files for the "users" app.
+      │  └─ __init__.py               # Marks the migrations directory as a Python package.
+      ├─ models.py                    # Defines the User model and related database schema.
+      ├─ serializers.py               # Serializers to convert User data between Python objects and JSON.
+      ├─ services.py                  # Contains business logic (e.g., user registration).
+      ├─ repositories.py              # Abstracts data access logic for cleaner code.
+      ├─ permissions.py               # Custom permission classes for role-based access control.
+      ├─ tests.py                     # Unit tests for the "users" app's models, views, and services.
+      ├─ urls.py                      # URL routing specific to the "users" app endpoints.
+      └─ views.py                     # API views for user registration, login, and protected endpoints.
 ```
 
 ## Environment Variables
