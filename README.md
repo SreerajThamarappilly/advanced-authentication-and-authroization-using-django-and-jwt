@@ -84,6 +84,16 @@ JWT_REFRESH_TOKEN_LIFETIME=JWT refresh token lifetime in days (e.g. 1)
 pip install -r requirements.txt
 ```
 
+- **Generate Migrations for the 'users' App**:
+
+If no migration files are found inside the myproject/users/migrations/ folder, then run the following command to generate the migration files.
+
+```bash
+python manage.py makemigrations users
+```
+
+Verify that the migration file is created inside the myproject/users/migrations/ folder.
+
 - **Apply migrations**:
 
 ```bash
@@ -94,6 +104,12 @@ python manage.py migrate
 
 ```bash
 python manage.py runserver
+```
+
+- **Open your browser and visit:**:
+
+```bash
+http://127.0.0.1:8000/admin/
 ```
 
 ## Testing the Application
